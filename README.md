@@ -1,3 +1,14 @@
+# How to build from this repo
+
+Copy `kesl_11.3.0-7441_amd64.deb`,  `kesl-gui_11.3.0-7441_amd64.deb` to this folder.
+
+Then run `makepkg`.
+
+If sha256 sums validation failed. Update sha sums in PKGBUILD with values from `sha256sum *deb` 
+
+Then install generated packages `pacman -U kesl-11.3.0.7441-3-x86_64.pkg.tar.zst kesl-gui-11.3.0.7441-3-x86_64.pkg.tar.zst`
+
+
 # About
 
 Arch package for Kaspersky Endpoint Security for Linux (KESL)
